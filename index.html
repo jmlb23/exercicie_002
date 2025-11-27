@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <h1>hello world</h1>
     <nav>
@@ -14,5 +16,18 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
+    <form action="#">
+        <fieldset>
+            <legend>User data</legend>
+            <label for="name">name</label>
+            <input id="name" type="text" required>
+            <label for="surname">surname</label>
+            <input id="surname" type="text" required>
+            <label for="phone">phone</label>
+            <input id="phone" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
 </body>
+
 </html>
